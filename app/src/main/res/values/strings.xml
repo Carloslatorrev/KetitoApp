@@ -1,0 +1,75 @@
+<resources>
+    <string name="app_name">Ketito</string>
+    <string name="app_version_name_label">Versión</string>
+
+    <!-- Activities -->
+    <string name="action_settings">Ajustes</string>
+    <string name="action_login">Iniciar Sesión</string>
+    <string name="action_business_select">Empresas</string>
+
+    <!-- MAIN -->
+    <string name="lbl_business_selected">Empresa Seleccionada</string>
+
+    <!-- Business Activity -->
+    <string name="lbl_business_select_title">Seleccione una empresa</string>
+
+    <!-- Alerts -->
+    <string name="action_about">Acerca de</string>
+
+    <!-- Encuesta -->
+    <string name="lbl_poll_title">Realizar Encuesta</string>
+    <string name="lbl_poll_client_phone">Celular</string>
+    <string name="lbl_poll_client_name">Nombre</string>
+    <string name="lbl_poll_client_email">Correo Electrónico</string>
+    <string name="lbl_poll_business">Mis Empresas</string>
+    <string name="lbl_poll_business_polls">Encuesta</string>
+    <string name="lbl_poll_business_polls_title">Encuestas</string>
+    <string name="lbl_poll_business_polls_express">Encuesta Express</string>
+    <string name="lbl_poll_btn_send">Enviar Encuesta</string>
+
+    <!-- Account -->
+    <string name="lbl_account_title">Iniciar Sesión</string>
+    <string name="lbl_account_user">Usuario:</string>
+    <string name="lbl_account_pwd">Contraseña:</string>
+    <string name="lbl_account_user_hint">ejemplo@gmail.com</string>
+    <string name="lbl_account_pwd_hint">******</string>
+    <string name="lbl_account_login_btn">Ingresar</string>
+    <string name="lbl_account_cancel_btn">Cancelar</string>
+    <string name="lbl_account_pwd_show_chk">Mostrar Contraseña</string>
+    <string name="lbl_account_pwd_text_recovery">¿Ha olvidado su contraseña?</string>
+    <string name="lbl_account_pwd_link_recovery"><a href="http://portal.ketito.cl/Account/ForgotPassword">¿Ha olvidado su contraseña?</a></string>
+
+
+    <!-- ABOUT -->
+    <string name="lbl_about_dev_title">Desarrollado por</string>
+    <string name="lbl_about_dev_name">Ckelar Software</string>
+    <string name="lbl_about_dev_email_title">Email</string>
+    <string name="lbl_about_dev_email">hola@ckelar.cl</string>
+    <string name="lbl_about_dev_website_title">Sitio web</string>
+    <string name="lbl_about_dev_website_url">http://www.ckelar.cl/</string>
+    <string name="lbl_about_dev_copyright">Copyright \u00a9 2018</string>
+    <string name="lbl_about_ok_btn">OK</string>
+    <!-- END ABOUT -->
+
+
+    <!-- MESSAGES -->
+    <string name="lbl_msg_loading">Cargando</string>
+    <string name="lbl_msg_sending">Enviando</string>
+    <string name="lbl_msg_error_empty">Este campo es obligatorio.</string>
+
+    <!-- USER DATA -->
+    <string name="txt_content_user_business">%business</string>
+
+    <string name="txt_content_user_plan">Token: @token</string>
+    <string name="txt_content_ubicacion">%ubi</string>
+    <string name="loginG">Iniciar Sesión</string>
+    <string name="txt_content_encuesta_name">%encuesta</string>
+    <string name="txt_content_description_encuesta">%description</string>
+
+    <!--PREGUNTA DASHBOARD-->
+    <string name="txt_content_Nom_Encuesta">Encuesta: %nomEncuesta</string>
+    <string name="txt_content_Nom_Pregunta">Pregunta: %nomPregunta</string>
+    <string name="txt_content_Total_Respuestas">Total Respuestas: %totalRespuestas</string>
+    <string name="txt_content_Total_Tomas">Total Tomas: %totalTomas</string>
+
+</resources>

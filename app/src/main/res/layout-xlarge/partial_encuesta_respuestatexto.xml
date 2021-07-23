@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="400dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:background="@android:color/transparent"
+    android:outlineProvider="bounds"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    android:layout_marginTop="115dp">
+
+
+    <TextView
+        android:id="@+id/respuestaTextoTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="%title"
+        android:textColor="@color/baseKetito"
+        android:textSize="@dimen/font_size_encuestatitle"
+        android:textStyle="bold"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/respuestaTextoDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="%description"
+        android:textColor="@color/baseKetito"
+        android:textSize="@dimen/font_size_title"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.323" />
+
+    <EditText
+        android:id="@+id/respuestaTextoEditTextShort"
+        android:layout_width="650dp"
+        android:layout_height="41dp"
+        android:background="@drawable/background_dropdown"
+        android:shadowColor="@color/baseKetito"
+        android:textColor="@color/baseKetito"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.651"></EditText>
+
+    <EditText
+        android:id="@+id/respuestaTextoEditTextLarge"
+        android:layout_width="650dp"
+        android:layout_height="104dp"
+        android:background="@drawable/background_dropdown"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:shadowColor="@color/baseKetito"
+        android:textColor="@color/baseKetito"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.79" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

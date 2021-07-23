@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".controllers.LoginActivity"
+    android:background="#FFFFFF">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="13dp"
+        android:background="@drawable/ic_login_shadow"
+        android:elevation="5dp">
+
+
+        <ImageView
+            android:id="@+id/imgKetito"
+            android:layout_width="432dp"
+            android:layout_height="142dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitStart"
+            android:src="@drawable/ketito"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/guideline4"
+            app:layout_constraintHorizontal_bias="0.323"
+            app:layout_constraintStart_toStartOf="@+id/guideline"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.036" />
+
+        <TextView
+            android:id="@+id/txtNomUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_account_user"
+            android:textSize="@dimen/font_size_normal"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/btnLogin"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/imgKetito"
+            app:layout_constraintTop_toBottomOf="@+id/imgKetito"
+            app:layout_constraintVertical_bias="0.299" />
+
+        <EditText
+            android:id="@+id/edtUser"
+            android:layout_width="277dp"
+            android:layout_height="53dp"
+            android:ems="10"
+            android:focusable="auto"
+            android:hint="@string/lbl_account_user_hint"
+            android:inputType="textEmailAddress"
+            android:textSize="@dimen/font_size_normal"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/guideline4"
+            app:layout_constraintHorizontal_bias="0.373"
+            app:layout_constraintRight_toLeftOf="@+id/txtNomUser"
+            app:layout_constraintStart_toEndOf="@+id/txtNomUser"
+            app:layout_constraintTop_toBottomOf="@+id/imgKetito"
+            app:layout_constraintVertical_bias="0.14" />
+
+        <TextView
+            android:id="@+id/txtPassUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_account_pwd"
+            android:textSize="@dimen/font_size_normal"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/btnLogin"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/txtNomUser"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.719" />
+
+        <EditText
+            android:id="@+id/edtPassword"
+            android:layout_width="278dp"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:hint="@string/lbl_account_pwd_hint"
+            android:inputType="textPassword"
+            android:textSize="@dimen/font_size_normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/guideline4"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintRight_toLeftOf="@+id/txtPassUser"
+            app:layout_constraintStart_toStartOf="@+id/edtUser"
+            app:layout_constraintTop_toBottomOf="@+id/edtUser"
+            app:layout_constraintVertical_bias="0.101" />
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="418dp"
+            android:layout_height="41dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="76dp"
+            android:layout_marginEnd="16dp"
+            android:background="@color/baseKetito"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="@string/lbl_account_title"
+            android:textColor="#f9f9f9"
+            android:textSize="@dimen/font_size_normal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chkPwdShow" />
+
+        <CheckBox
+            android:id="@+id/chkPwdShow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_account_pwd_show_chk"
+            android:textSize="@dimen/font_size_small"
+            android:textStyle=""
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.598"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtPassword"
+            app:layout_constraintVertical_bias="0.067" />
+
+        <TextView
+            android:id="@+id/txtPwdRecovery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:autoLink="web"
+            android:text="@string/lbl_account_pwd_link_recovery"
+            android:textSize="@dimen/font_size_small"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnLogin"
+            app:layout_constraintVertical_bias="0.061" />
+
+        <TextView
+            android:id="@+id/txtVersion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:autoLink="web"
+            android:text="Version:"
+            android:textSize="@dimen/font_size_small"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+
+            app:layout_constraintTop_toBottomOf="@+id/txtPowered"
+            app:layout_constraintVertical_bias="0.375" />
+
+        <TextView
+            android:id="@+id/txtPowered"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:autoLink="web"
+            android:text="Powered by MDTech Ltda."
+            android:textSize="@dimen/font_size_small"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtPwdRecovery"
+            app:layout_constraintVertical_bias="0.446" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="923dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="976dp" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>

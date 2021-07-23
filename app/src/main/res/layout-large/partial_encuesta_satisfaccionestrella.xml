@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="340dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:background="@android:color/transparent"
+    android:outlineProvider="bounds"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    android:layout_marginTop="80dp">
+
+
+    <TextView
+        android:id="@+id/satisfaccionEstrellaTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="%title"
+        android:textColor="@color/baseKetito"
+        android:textSize="@dimen/font_size_encuestatitle"
+        android:textStyle="bold"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.055" />
+
+    <TextView
+        android:id="@+id/satisfaccionEstrellaDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="%description"
+        android:textColor="@color/baseKetito"
+        android:textSize="@dimen/font_size_title"
+        android:textStyle="bold"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.264" />
+
+    <RadioGroup
+        android:id="@+id/satisfaccionEstrellaRadioGroup"
+        android:layout_width="563dp"
+        android:layout_height="106dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.589">
+
+        <RadioButton
+            android:id="@+id/satisfaccionEstrellaRadio1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:button="@drawable/radiobutton_satisfaccionestrella"
+            android:text="1est"
+            android:textColor="@android:color/transparent" />
+
+        <RadioButton
+            android:id="@+id/satisfaccionEstrellaRadio2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:button="@drawable/radiobutton_satisfaccionestrella"
+            android:text="2est"
+            android:textColor="@android:color/transparent" />
+
+        <RadioButton
+            android:id="@+id/satisfaccionEstrellaRadio3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:button="@drawable/radiobutton_satisfaccionestrella"
+            android:text="3est"
+            android:textColor="@android:color/transparent" />
+
+        <RadioButton
+            android:id="@+id/satisfaccionEstrellaRadio4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:button="@drawable/radiobutton_satisfaccionestrella"
+            android:text="4est"
+            android:textColor="@android:color/transparent" />
+
+        <RadioButton
+            android:id="@+id/satisfaccionEstrellaRadio5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:button="@drawable/radiobutton_satisfaccionestrella"
+            android:text="5est"
+            android:textColor="@android:color/transparent" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/txtSatisfaccionEstrellaMinimo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="%init"
+        android:textColor="@color/baseKetito"
+        android:textSize="@dimen/font_size_title"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.066"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtNotaSatisfaccionEstrellaMaximo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="%fin"
+        android:textColor="@color/baseKetito"
+        android:textSize="@dimen/font_size_title"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.917"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

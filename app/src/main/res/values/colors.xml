@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="colorPrimary">#2e86c1</color>-->
+    <color name="colorPrimary">#2e86c1</color>
+    <color name="colorPrimaryDark">#0060a0</color>
+    <color name="colorAccent">#d35400</color>
+
+    <color name="bgGray">#dcdcdc</color>
+
+    <color name="bgSuccess">#28A745</color>
+    <color name="baseKetito">#3498db</color>
+    <color name="baseKetitoLight">#3498dc</color>
+    <color name="error_color">#B4392F</color>
+    <color name="light_ketito">#71B1DC</color>
+</resources>

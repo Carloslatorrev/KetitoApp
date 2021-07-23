@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:alpha="1">
+
+
+    <TextView
+        android:id="@+id/txtBusinessWelcome"
+        android:layout_width="600dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="16dp"
+        android:inputType="textMultiLine"
+        android:text="@string/txt_content_user_business"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:textSize="@dimen/font_size_title"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.113"
+        android:background="@android:color/transparent"
+        android:alpha="0.8"
+        />
+
+    <TextView
+        android:id="@+id/txtTokenWelcome"
+        android:layout_width="600dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="16dp"
+        android:inputType="textMultiLine"
+        android:text="@string/txt_content_ubicacion"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:textSize="@dimen/font_size_normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtBusinessWelcome"
+        app:layout_constraintVertical_bias="0.0"
+        android:background="@android:color/transparent"
+        android:alpha="0.8"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

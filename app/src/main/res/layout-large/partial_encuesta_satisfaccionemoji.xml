@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="340dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:background="@android:color/transparent"
+    android:outlineProvider="bounds"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    android:layout_marginTop="80dp">
+
+
+    <TextView
+        android:id="@+id/satisfaccionEmojiTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="%title"
+        android:textColor="@color/baseKetito"
+        android:textSize="@dimen/font_size_encuestatitle"
+        android:textStyle="bold"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.013" />
+
+    <TextView
+        android:id="@+id/satisfaccionEmojiDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="%description"
+        android:textColor="@color/baseKetito"
+        android:textSize="@dimen/font_size_title"
+        android:textStyle="bold"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.235" />
+
+    <RadioGroup
+        android:id="@+id/satisfaccionEmojiRadioGroup"
+        android:layout_width="575dp"
+        android:layout_height="108dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.547">
+
+        <RadioButton
+            android:id="@+id/satisfaccionEmojiRadioEnojado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:button="@drawable/radiobutton_satisfaccionemojienojado"
+            android:text="enojado"
+            android:textColor="@android:color/transparent"
+            android:textSize="5sp" />
+
+        <RadioButton
+            android:id="@+id/satisfaccionEmojiRadioTriste"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:button="@drawable/radiobutton_satisfaccionemojitriste"
+            android:text="triste"
+            android:textColor="@android:color/transparent"
+            android:textSize="5sp" />
+
+        <RadioButton
+            android:id="@+id/satisfaccionEmojiRadioSerio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:button="@drawable/radiobutton_satisfaccionemojiserio"
+            android:text="serio"
+            android:textColor="@android:color/transparent"
+            android:textSize="5sp" />
+
+        <RadioButton
+            android:id="@+id/satisfaccionEmojiRadioSonrie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:button="@drawable/radiobutton_satisfaccionemojisonrie"
+            android:text="sonrie"
+            android:textColor="@android:color/transparent"
+            android:textSize="5sp" />
+
+        <RadioButton
+            android:id="@+id/satisfaccionEmojiRadioFeliz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:button="@drawable/radiobutton_satisfaccionemojifeliz"
+            android:text="feliz"
+            android:textColor="@android:color/transparent"
+            android:textSize="5sp" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/txtSatisfaccionEmojiMinimo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="%init"
+        android:textColor="@color/baseKetito"
+        android:textSize="@dimen/font_size_title"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.059"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.47" />
+
+    <TextView
+        android:id="@+id/txtNotaSatisfaccionEmojiMaximo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="%fin"
+        android:textColor="@color/baseKetito"
+        android:textSize="@dimen/font_size_title"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.937"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.47" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

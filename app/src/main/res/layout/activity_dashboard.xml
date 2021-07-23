@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/HeaderLayout"
+        android:layout_width="868dp"
+        android:layout_height="87dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="2dp"
+        android:background="@drawable/border_header"
+        android:elevation="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.545"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ImageButton
+            android:id="@+id/imgBtnLogoSetting"
+            android:layout_width="108dp"
+            android:layout_height="73dp"
+            android:backgroundTint="@android:color/transparent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.043"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.416" />
+
+        <ImageButton
+            android:id="@+id/imgButtonBackDash"
+            android:layout_width="103dp"
+            android:layout_height="48dp"
+            android:background="@drawable/botonanterior"
+            android:elevation="10dp"
+            android:stateListAnimator="@null"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.94"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.551" />
+
+        <include
+            android:id="@+id/includeUserData"
+            layout="@layout/content_user_data_layout"
+            android:layout_width="297dp"
+            android:layout_height="72dp"
+            android:layout_alignParentTop="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.108"
+            app:layout_constraintStart_toEndOf="@+id/imgBtnLogoSetting"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.461" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <TextView
+        android:id="@+id/textTitleDashboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Estadísticas de Encuesta:"
+        android:textColor="@color/baseKetito"
+        android:textSize="@dimen/font_size_title"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.024"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.299" />
+
+    <TextView
+        android:id="@+id/textTitlePreguntas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Elija su pregunta:"
+        android:textColor="@color/baseKetito"
+        android:textSize="@dimen/font_size_title"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.113"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.392" />
+
+    <ListView
+        android:id="@+id/lvPreguntasView"
+        android:layout_width="689dp"
+        android:layout_height="207dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:textSize="@dimen/font_size_list"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.862"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

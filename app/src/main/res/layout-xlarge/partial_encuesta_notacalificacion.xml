@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="400dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:background="@android:color/transparent"
+    android:outlineProvider="bounds"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    android:layout_marginTop="115dp">
+
+
+    <TextView
+        android:id="@+id/notaCalificacionTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="%title"
+        android:textColor="@color/baseKetito"
+        android:textSize="@dimen/font_size_encuestatitle"
+        android:textStyle="bold"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.055" />
+
+    <TextView
+        android:id="@+id/txtNotaCalificacionDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="%description"
+        android:textColor="@color/baseKetito"
+        android:textSize="@dimen/font_size_title"
+        android:textStyle="bold"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.274" />
+
+    <SeekBar
+        android:id="@+id/notaCalificacionSeekBar"
+        android:layout_width="563dp"
+        android:layout_height="34dp"
+        android:progressDrawable="@drawable/costum_seekbar"
+        android:splitTrack="false"
+        android:thumb="@drawable/costum_thumb"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.532"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.639" />
+
+    <TextView
+        android:id="@+id/txtNotaCalifiacionInit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="%init"
+        android:textColor="@color/baseKetito"
+        android:textSize="@dimen/font_size_title"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.099"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.646" />
+
+    <TextView
+        android:id="@+id/txtNotaCalifiacionNota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="%nota"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/font_size_title"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.853" />
+
+    <TextView
+        android:id="@+id/txtNotaCalifiacionFin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="%fin"
+        android:textColor="@color/baseKetito"
+        android:textSize="@dimen/font_size_title"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.885"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.646" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

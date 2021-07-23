@@ -1,0 +1,29 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@android:color/background_light</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="android:displayOptions">useLogo</item>
+        <item name="logo">@drawable/ketito</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="btn_style_raised" parent="Theme.AppCompat.Light">
+        <item name="colorControlHighlight">@color/baseKetito</item>
+        <item name="colorButtonNormal">@color/baseKetitoLight</item>
+        <item name="cornerRadius">10dp</item>
+    </style>
+
+</resources>

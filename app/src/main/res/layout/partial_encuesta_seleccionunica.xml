@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:background="@android:color/transparent"
+    android:outlineProvider="bounds"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    android:layout_marginTop="70dp">
+
+
+        <TextView
+            android:id="@+id/seleccionUnicaTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="%title"
+            android:textColor="@color/baseKetito"
+            android:textSize="@dimen/font_size_encuestatitle"
+            android:textStyle="bold"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.101" />
+
+        <TextView
+            android:id="@+id/seleccionUnicaDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="%description"
+            android:textColor="@color/baseKetito"
+            android:textSize="@dimen/font_size_title"
+            android:textStyle="bold"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.358" />
+
+        <RadioGroup
+            android:id="@+id/seleccionUnicaRadioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.668">
+        </RadioGroup>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

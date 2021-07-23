@@ -1,0 +1,34 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="cl.ckelar.android.ketito.MainActivity"
+    >
+
+
+
+    <!--
+    <item
+        android:id="@+id/action_about"
+        android:orderInCategory="100"
+        android:title="@string/action_about"
+        app:showAsAction="always"
+        android:icon="@drawable/action_about_icon"/>
+        -->
+
+    <item
+        android:id="@+id/action_business_select"
+        android:orderInCategory="100"
+        android:title="@string/action_business_select"
+        app:showAsAction="always"
+        android:icon="@drawable/sync"/>
+
+    <item
+        android:id="@+id/action_login"
+        android:orderInCategory="100"
+        android:title="@string/action_login"
+        app:showAsAction="always"
+        android:icon="@drawable/account"/>
+
+
+
+</menu>

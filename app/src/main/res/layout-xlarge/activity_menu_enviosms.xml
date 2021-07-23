@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/HeaderLayout"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/border_header"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.006"
+        tools:layout_editor_absoluteX="2dp">
+
+        <ImageButton
+            android:id="@+id/imgBtnLogoEnvioSMS"
+            android:layout_width="175dp"
+            android:layout_height="130dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.053"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.512" />
+
+        <include
+            android:id="@+id/includeUserData"
+            layout="@layout/content_encuesta_data_layout"
+            android:layout_width="451dp"
+            android:layout_height="103dp"
+            android:layout_alignParentTop="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.128"
+            app:layout_constraintStart_toEndOf="@+id/imgBtnLogoEnvioSMS"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.43" />
+
+        <ImageButton
+            android:id="@+id/imgButtonBackEnvioSMS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/botonanterior"
+            android:elevation="10dp"
+            android:stateListAnimator="@null"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.94"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.551" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/txtEnvioSMSSelectTitle"
+        android:layout_width="476dp"
+        android:layout_height="92dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="Digita tu número teléfonico y te enviaremos un SMS con la Encuesta."
+        android:textAlignment="center"
+        android:textColor="@color/baseKetito"
+        android:textSize="@dimen/font_size_title"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.341" />
+
+    <EditText
+        android:id="@+id/editTextTelefonoEnvioSMS"
+        android:layout_width="256dp"
+        android:layout_height="63dp"
+        android:background="@drawable/background_dropdown"
+        android:ems="10"
+        android:hint="Ejemplo: 912345678"
+        android:gravity="center"
+        android:inputType="phone"
+        android:textColor="@color/baseKetito"
+        android:textColorHint="@color/light_ketito"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.563" />
+
+    <Button
+        android:id="@+id/btnEnviarSMS"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="293dp"
+        android:layout_height="122dp"
+        android:background="@drawable/corner_radius_redo"
+        android:drawableLeft="@drawable/ic_baseline_forward_to_inbox_24"
+        android:elevation="10dp"
+        android:paddingLeft="16dp"
+        android:paddingTop="8dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="5dp"
+        android:stateListAnimator="@null"
+        android:text="Enviar Encuesta"
+        android:textColor="@android:color/background_light"
+        android:textSize="@dimen/font_size_title"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.808" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

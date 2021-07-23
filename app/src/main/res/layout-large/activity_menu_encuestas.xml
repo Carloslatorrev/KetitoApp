@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:background="#FFFFFF"
+    android:outlineProvider="bounds">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="695dp"
+        android:layout_height="462dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/ic_login_shadow">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/HeaderLayout"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:background="@drawable/border_header"
+            android:elevation="30dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+
+
+            <ImageButton
+                android:id="@+id/imgBtnLogoEnc"
+                android:layout_width="110dp"
+                android:layout_height="90dp"
+                android:backgroundTint="@android:color/transparent"
+                android:splitTrack="false"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.056"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <include
+                android:id="@+id/includeEncuestaData"
+                layout="@layout/content_encuesta_data_layout"
+                android:layout_width="479dp"
+                android:layout_height="92dp"
+                android:layout_alignParentTop="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.157"
+                app:layout_constraintStart_toEndOf="@+id/imgBtnLogoEnc"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <Button
+            android:id="@+id/btnEnviarEncuesta"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="325dp"
+            android:layout_height="130dp"
+            android:background="@drawable/corner_radius_redo"
+            android:drawableLeft="@drawable/ic_baseline_forward_to_inbox_24"
+            android:elevation="10dp"
+            android:paddingLeft="16dp"
+            android:paddingTop="8dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="5dp"
+            android:stateListAnimator="@null"
+            android:text="Enviar Encuesta"
+            android:textColor="@android:color/background_light"
+            android:textSize="@dimen/font_size_normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.841"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.819" />
+
+        <Button
+            android:id="@+id/btnPresentarEncuesta"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="329dp"
+            android:layout_height="134dp"
+            android:layout_marginStart="200dp"
+            android:layout_marginTop="200dp"
+            android:layout_marginEnd="80dp"
+            android:layout_marginBottom="250dp"
+            android:background="@drawable/corner_radius_redo"
+            android:drawableLeft="@drawable/ic_baseline_slideshow_24"
+            android:elevation="10dp"
+            android:paddingLeft="16dp"
+            android:paddingTop="8dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="5dp"
+            android:stateListAnimator="@null"
+            android:text="Responder Encuesta"
+            android:textColor="@android:color/background_light"
+            android:textSize="@dimen/font_size_normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="16:9"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.956"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.699" />
+
+        <Button
+            android:id="@+id/btnPresentarEncuesta2"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="325dp"
+            android:layout_height="130dp"
+            android:background="@drawable/corner_radius_redo"
+            android:drawableLeft="@drawable/ic_baseline_slideshow_24"
+            android:elevation="10dp"
+            android:paddingLeft="16dp"
+            android:paddingTop="8dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="5dp"
+            android:stateListAnimator="@null"
+            android:text="Responder Encuesta"
+            android:textColor="@android:color/background_light"
+            android:textSize="@dimen/font_size_normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.871"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.605"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/imgQRcode"
+            android:layout_width="330dp"
+            android:layout_height="330dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.121"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.686" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>
